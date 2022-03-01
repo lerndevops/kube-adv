@@ -4,13 +4,13 @@ metadata:
   name: kubeserve
   namespace: default
 spec:
-  replicas: 10
-  minReadySeconds: 45 # wait for 45 sec before going to deploy next pod
+  replicas: 5
+  minReadySeconds: 15 # wait for 45 sec before going to deploy next pod
   strategy:
     type: RollingUpdate
     rollingUpdate:
       maxUnavailable: 1  
-      maxSurge: 2        # max number of pods to run for the deployment
+      maxSurge: 1        # max number of pods to run for the deployment
   selector:
     matchLabels:
       app: kubeserve
