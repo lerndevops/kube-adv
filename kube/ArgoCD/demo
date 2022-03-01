@@ -31,4 +31,10 @@ Setting --> Repo --> select github using https --> give the url and Connect
 
 
 Select NewApp
+Name: anyname
+Sync: manual/auto
+Repo :github repo
+path : .
+cluster: https://kubernetes.default.svc
+namespace: your choice
 
