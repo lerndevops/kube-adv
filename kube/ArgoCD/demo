@@ -20,3 +20,15 @@ access with master/nodeIP: nodePort --> to access the Argo CD UI
 username: admin
 
 password: Output of Line  above.
+
+
+Navigation :
+============
+
+App Repo: https://github.com/lerndevops/argo-demo
+
+Setting --> Repo --> select github using https --> give the url and Connect
+
+
+Select NewApp
+
