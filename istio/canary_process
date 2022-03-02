@@ -20,4 +20,4 @@ Observe round robin like below
 
 Now we need to update the Trafic
 
-Go to Kiali, select staff-service twice, got Action (top right) select TCP Traffic shifting 
+Go to Kiali, select staff-service twice, got Action (top right) select  Traffic shifting 
