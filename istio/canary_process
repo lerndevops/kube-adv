@@ -1,0 +1,23 @@
+Delete the app
+kubectl create -f https://raw.githubusercontent.com/lerndevops/kube-adv/master/istio/3-fleetmanapp-staff-svc-risky.yml
+
+check staff-service, 3 pods are there
+Access the app in UI , we see images of driver
+
+Now access staff-service svc
+
+while true; do curl http://10.109.25.59:80/api/vehicles/driver/City%20Truck ; echo ; sleep 0.5; done;
+Observe round robin like below
+
+{"name":"Pam Parry","photo":"https://rac-istio-course-images.s3.amazonaws.com/1.jpg"}
+{"name":"Pam Parry","photo":"https://rac-istio-course-images.s3.amazonaws.com/placeholder.png"}
+{"name":"Pam Parry","photo":"https://rac-istio-course-images.s3.amazonaws.com/placeholder.png"}
+{"name":"Pam Parry","photo":"https://rac-istio-course-images.s3.amazonaws.com/1.jpg"}
+{"name":"Pam Parry","photo":"https://rac-istio-course-images.s3.amazonaws.com/placeholder.png"}
+{"name":"Pam Parry","photo":"https://rac-istio-course-images.s3.amazonaws.com/placeholder.png"}
+{"name":"Pam Parry","photo":"https://rac-istio-course-images.s3.amazonaws.com/1.jpg"}
+
+
+Now we need to update the Trafic
+
+Go to Kiali, select staff-service twice, got Action (top right) select TCP Traffic shifting 
