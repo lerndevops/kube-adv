@@ -29,11 +29,9 @@ Access Kiali and Jaeger Dashboards for UI and Tracing (both are nodePort service
 
 // Resolution
 
-Now, download wget https://raw.githubusercontent.com/lerndevops/kube-adv/master/istio/1-fleemanapp-full-stack.yml
 
-edit the file
 
-apply https://github.com/lerndevops/kube-adv/blob/master/istio/resolution-1-fleemanapp-full-stack.yml
+kubectl apply -f https://raw.githubusercontent.com/lerndevops/kube-adv/master/istio/resolution-1-fleemanapp-full-stack.yml
 
 
 Now check kiali and jaeger response times. App also loads faster
