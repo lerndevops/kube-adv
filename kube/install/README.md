@@ -55,7 +55,7 @@ kubeadm token create --print-join-command
     sudo apt-get update ; clear
     sudo apt-get install -y docker-ce
     
-    vi /etc/daemon.json
+    vi /etc/docker/daemon.json
 
 {
   "exec-opts": ["native.cgroupdriver=systemd"]
