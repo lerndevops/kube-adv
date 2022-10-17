@@ -5,7 +5,7 @@
 ## Install Docker,kubeadm,kubelet,kubectl
 
 Run installDocker.sh on all Machines
-Run installKube23.sh script on all nodes
+Run installK8S-v1-23.sh script on all machines
 
 ## Initialize kubernetes Master Node
  
