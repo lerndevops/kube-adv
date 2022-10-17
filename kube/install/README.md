@@ -4,9 +4,8 @@
 ```
 ## Install Docker,kubeadm,kubelet,kubectl
 
-sudo wget https://raw.githubusercontent.com/lerndevops/labs/master/scripts/installK8S-v1-23.sh -P /tmp
-sudo chmod 755 /tmp/installK8S-v1-23.sh
-sudo bash /tmp/installK8S-v1-23.sh
+Run installDocker.sh on all Machines
+Run installKube23.sh script on all nodes
 
 ## Initialize kubernetes Master Node
  
@@ -26,11 +25,6 @@ sudo bash /tmp/installK8S-v1-23.sh
 ```
 ### `Step2: On All Worker Nodes`
 ```
-## Install Docker,kubeadm,kubelet
-
-sudo wget https://raw.githubusercontent.com/lerndevops/labs/master/scripts/installK8S-v1-23.sh -P /tmp
-sudo chmod 755 /tmp/installK8S-v1-23.sh
-sudo bash /tmp/installK8S-v1-23.sh
 
 ## Run Below on Master Node to get join token 
 
