@@ -1,7 +1,7 @@
 kind: Deployment
 apiVersion: apps/v1
 metadata:
-  name: blue-v1-deploy
+  name: raviapp
 spec:
   replicas: 5
   selector:
