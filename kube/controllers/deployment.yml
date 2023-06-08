@@ -5,7 +5,7 @@ metadata:
   namespace: default
 spec:
   replicas: 5
-  minReadySeconds: 15 # wait for 45 sec before going to deploy next pod
+  minReadySeconds: 15 # wait for 15 sec before going to deploy next pod
   strategy:
     type: RollingUpdate
     rollingUpdate:
