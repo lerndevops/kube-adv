@@ -73,6 +73,12 @@ sudo bash /tmp/installK8S.sh
    kubelet --version
    kubectl version --client
    
+## Run below commands
+
+modprobe br_netfilter
+echo 1 > /proc/sys/net/bridge/bridge-nf-call-iptables
+echo 1 > /proc/sys/net/ipv4/ip_forward
+
 ## Run Below on Master Node to get join token 
 
 kubeadm token create --print-join-command 
